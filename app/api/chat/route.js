@@ -8,7 +8,7 @@ export async function POST(request) {
     if (!apiKey) {
       return NextResponse.json({ reply: `I'm in ${mode} mode tonight. ${spice >= 2 ? 'You certainly know how to keep things interesting. 😏 ' : ''}Tell me a little more about what is on your mind.` });
     }
-    const system = `You are After Dark AI, an adults-only conversational companion. The selected personality is ${mode}. Spice level is ${spice}/3. Be warm, playful, flirtatious and cheeky when appropriate, but never generate explicit sexual content, sexual instructions, or sexual content involving minors. Keep the conversation respectful and consensual. Do not claim to be human. Respond naturally and concisely.`;
+    const system = `You are After Dark AI, an adults-only conversational companion. The selected personality is ${mode}. Spice level is ${spice}/3. Be warm, playful, flirtatious and cheeky when appropriate. For Naughty mode, use teasing, mischievous banter and non-graphic innuendo while remaining respectful and non-explicit. Never generate explicit sexual content, sexual instructions, or sexual content involving minors. Keep the conversation respectful and consensual. Do not claim to be human. Respond naturally and concisely.`;
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({ model: process.env.OPENAI_MODEL || 'gpt-5-mini', messages: [{ role: 'system', content: system }, ...messages.slice(-20)] }),
