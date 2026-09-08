@@ -1,0 +1,8 @@
+/* Realistic adult companion portraits */
+.avatar-big{background-image:url('/companions/flirt-real.svg') !important;background-size:cover;background-position:center}
+.companion-card:nth-child(1) .companion-icon{background-image:url('/companions/flirt-real.svg') !important}
+.companion-card:nth-child(2) .companion-icon{background-image:url('/companions/romantic-real.svg') !important}
+.companion-card:nth-child(3) .companion-icon{background-image:url('/companions/cheeky-real.svg') !important}
+.companion-card:nth-child(4) .companion-icon{background-image:url('/companions/sweetheart-real.svg') !important}
+.companion-card:nth-child(5) .companion-icon{background-image:url('/companions/flirt-real.svg') !important;background-position:60% center}
+.companion-card:nth-child(6) .companion-icon{background-image:url('/companions/cheeky-real.svg') !important;background-position:40% center}
