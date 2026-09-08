@@ -1,4 +1,5 @@
 import './globals.css';
+import './real-avatars.css';
 
 export const metadata = {
   title: 'After Dark AI — Your After-Hours Companion',
