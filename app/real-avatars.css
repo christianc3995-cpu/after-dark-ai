@@ -1,8 +1,12 @@
 /* Realistic adult companion portraits */
-.avatar-big{background-image:url('/companions/flirt-real.svg') !important;background-size:cover;background-position:center}
+.avatar-big{background-image:url('/companions/flirt-real.svg') !important;background-size:cover;background-position:center !important;font-size:0}
 .companion-card:nth-child(1) .companion-icon{background-image:url('/companions/flirt-real.svg') !important}
 .companion-card:nth-child(2) .companion-icon{background-image:url('/companions/romantic-real.svg') !important}
 .companion-card:nth-child(3) .companion-icon{background-image:url('/companions/cheeky-real.svg') !important}
 .companion-card:nth-child(4) .companion-icon{background-image:url('/companions/sweetheart-real.svg') !important}
-.companion-card:nth-child(5) .companion-icon{background-image:url('/companions/flirt-real.svg') !important;background-position:60% center}
-.companion-card:nth-child(6) .companion-icon{background-image:url('/companions/cheeky-real.svg') !important;background-position:40% center}
+.companion-card:nth-child(5) .companion-icon{background-image:url('/companions/confident-real.svg') !important}
+.companion-card:nth-child(6) .companion-icon{background-image:url('/companions/naughty-real.svg') !important}
+.companion-icon{background-size:cover !important;background-position:center top !important}
+.companion-card{overflow:hidden}
+.companion-icon:before{content:'18+';position:absolute;z-index:2;top:12px;right:12px;padding:5px 8px;border-radius:999px;background:rgba(10,8,12,.72);border:1px solid rgba(255,255,255,.16);color:#eee;font-size:9px;font-weight:800;letter-spacing:1px}
+@media(max-width:560px){.companion-icon{height:230px !important}}
